@@ -1,0 +1,46 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="128" fill="url(#bg)"/>
+  <g filter="url(#blur)">
+    <circle cx="70" cy="72" r="52" fill="#FF5FD2" fill-opacity="0.55"/>
+    <circle cx="194" cy="74" r="44" fill="#7A7BFF" fill-opacity="0.48"/>
+    <circle cx="134" cy="204" r="54" fill="#53CCFF" fill-opacity="0.4"/>
+  </g>
+  <circle cx="128" cy="112" r="46" fill="url(#skin)"/>
+  <path d="M86 103C86 72.0721 111.072 47 142 47H143C163.435 47 182.769 56.5816 194.443 72.9167C185.52 66.4826 174.57 62.6919 162.734 62.6919C132.931 62.6919 108.77 86.8528 108.77 116.656V120H86V103Z" fill="url(#hair)"/>
+  <path d="M82 210C88.5015 169.747 121.118 139 160.5 139C191.16 139 217.295 157.626 229 184.154V256H64L82 210Z" fill="url(#dress)"/>
+  <path d="M86 206C93.8989 173.545 123.128 150 157.857 150C184.495 150 208.459 163.866 223 185.91V256H72L86 206Z" fill="url(#dressGlow)" fill-opacity="0.52"/>
+  <circle cx="108" cy="111" r="5" fill="#2F2140" fill-opacity="0.75"/>
+  <circle cx="144" cy="111" r="5" fill="#2F2140" fill-opacity="0.75"/>
+  <path d="M111 131C116.702 137.473 124.717 141 133 141C141.283 141 149.298 137.473 155 131" stroke="#FFEEF8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M94 60C115 43 144.4 39.2 170 49C184.172 54.4261 194.948 64.5603 201 78C191.748 67.8295 177.514 61.44 161.788 61.44C134.622 61.44 112.6 80.2657 110.925 106.493L109 137H88L86.5 100.5L94 60Z" fill="url(#hair)"/>
+  <text x="128" y="226" text-anchor="middle" fill="white" fill-opacity="0.92" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" letter-spacing="8">VV</text>
+  <defs>
+    <filter id="blur" x="-14" y="-12" width="292" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="18" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+    <linearGradient id="bg" x1="28" y1="23" x2="222" y2="243" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#190D34"/>
+      <stop offset="0.48" stop-color="#271349"/>
+      <stop offset="1" stop-color="#0A122D"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="101" y1="72" x2="157" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE2F1"/>
+      <stop offset="1" stop-color="#F2B8D8"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="118" y1="44" x2="189" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D163C"/>
+      <stop offset="1" stop-color="#5D2268"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="85" y1="153" x2="223" y2="251" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5FD2"/>
+      <stop offset="0.48" stop-color="#8D77FF"/>
+      <stop offset="1" stop-color="#53CCFF"/>
+    </linearGradient>
+    <linearGradient id="dressGlow" x1="100" y1="164" x2="197" y2="247" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
