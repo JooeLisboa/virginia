@@ -1,7 +1,7 @@
-import type { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from "react";
 
-import { BackgroundEffects } from '@/components/BackgroundEffects';
-import { cn } from '@/lib/utils';
+import { BackgroundEffects } from "@/components/BackgroundEffects";
+import { cn } from "@/lib/utils";
 
 export function CardShell({ children }: PropsWithChildren) {
   return (
@@ -11,11 +11,13 @@ export function CardShell({ children }: PropsWithChildren) {
 
       <section
         className={cn(
-          'glass-panel glow-border relative w-full overflow-hidden rounded-[2rem]'
+          "glass-panel glow-border relative w-full overflow-hidden rounded-4xl",
         )}
       >
         <BackgroundEffects />
-        <div className="relative z-10 flex flex-col gap-5 px-4 pb-4 pt-5 sm:px-5 sm:pb-5 sm:pt-6">{children}</div>
+        <div className="relative z-10 flex flex-col gap-5 px-4 pb-4 pt-5 sm:px-5 sm:pb-5 sm:pt-6">
+          {children}
+        </div>
       </section>
     </main>
   );
