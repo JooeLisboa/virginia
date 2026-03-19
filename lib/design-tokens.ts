@@ -1,49 +1,49 @@
 export const brandLinks = [
   {
-    title: 'Promo Drops',
-    description: 'Campanhas, lançamentos e ativações com clique imediato.',
-    href: '#promo',
-    tag: 'Trending',
-    accent: 'from-fuchsia-400/70 via-pink-300/50 to-violet-400/70',
+    title: 'Promoções',
+    description: 'Campanhas e ativações com clique imediato e brilho de lançamento.',
+    href: '#promocoes',
+    tag: 'Em alta',
+    accent: 'from-[#ff5fcf]/75 via-[#ff9fe8]/55 to-[#d7b6ff]/75',
     icon: 'Sparkles'
   },
   {
-    title: 'Beauty Universe',
-    description: 'Beleza, skincare glow e universo premium de marca.',
+    title: 'Universo Beauty',
+    description: 'Beleza, glow e desejo premium em uma vitrine feita para encantar.',
     href: '#beauty',
     tag: 'Beauty',
-    accent: 'from-violet-400/70 via-fuchsia-300/50 to-sky-400/70',
+    accent: 'from-[#ff7bd9]/75 via-[#ffd5f3]/50 to-[#c7b1ff]/75',
     icon: 'Gem'
   },
   {
-    title: 'Brand Heat',
-    description: 'Marcas, collabs e presença comercial com assinatura pop.',
-    href: '#brands',
-    tag: 'Brands',
-    accent: 'from-cyan-400/70 via-blue-300/50 to-violet-400/70',
+    title: 'Marcas & Collabs',
+    description: 'Projetos, collabs e assinaturas que movimentam atenção e vendas.',
+    href: '#marcas',
+    tag: 'Marcas',
+    accent: 'from-[#ffc3ec]/75 via-[#ff72cb]/52 to-[#98cfff]/68',
     icon: 'BadgeCheck'
   },
   {
-    title: 'Event Signal',
-    description: 'Presença em eventos, aparições e experiências especiais.',
-    href: '#events',
-    tag: 'Live',
-    accent: 'from-pink-400/70 via-rose-300/50 to-cyan-400/70',
+    title: 'Eventos & Presença',
+    description: 'Experiências, aparições e momentos ao vivo com energia de fenômeno.',
+    href: '#eventos',
+    tag: 'Ao vivo',
+    accent: 'from-[#ff8bda]/75 via-[#f4bfff]/48 to-[#9cc9ff]/68',
     icon: 'CalendarHeart'
   },
   {
-    title: 'Business Contact',
-    description: 'Canal direto para projetos, licenciamento e publicidade.',
+    title: 'Contato Comercial',
+    description: 'Conexões estratégicas para campanhas, publicidade e oportunidades.',
     href: 'mailto:business@virginia.com',
-    tag: 'Direct',
-    accent: 'from-white/70 via-fuchsia-200/50 to-sky-300/70',
+    tag: 'Exclusivo',
+    accent: 'from-[#fff4fb]/75 via-[#ffd0f1]/55 to-[#c8d9ff]/68',
     icon: 'Send'
   }
 ] as const;
 
 export const campaignHighlight = {
-  eyebrow: 'Campaign Energy 2026',
-  title: 'High-glam presence. Fast taps. Immediate wow.',
+  eyebrow: 'ERA VIRGINIA',
+  title: '2026 é brilho, presença e campanha em alta.',
   description:
-    'Um cartão criado para converter cliques com impacto visual de produto premium e linguagem de ícone pop.'
+    'Uma peça compacta para reunir lançamentos, marcas e experiências com calor pop premium e assinatura de estrela.'
 };

@@ -2,8 +2,8 @@
 
 :root {
   color-scheme: dark;
-  --background: #050816;
-  --foreground: #f8f8ff;
+  --background: #140815;
+  --foreground: #fff7fd;
 }
 
 * {
@@ -12,9 +12,10 @@
 
 html {
   background:
-    radial-gradient(circle at top, rgba(255, 114, 221, 0.18), transparent 24%),
-    radial-gradient(circle at bottom, rgba(100, 188, 255, 0.14), transparent 28%),
-    #050816;
+    radial-gradient(circle at top, rgba(255, 104, 196, 0.22), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(214, 184, 255, 0.16), transparent 22%),
+    radial-gradient(circle at bottom, rgba(157, 210, 255, 0.1), transparent 30%),
+    #140815;
 }
 
 body {
@@ -42,9 +43,9 @@ a {
 }
 
 .glass-panel {
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.08) 42%, rgba(255, 255, 255, 0.05));
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.24);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.1) 42%, rgba(255, 255, 255, 0.06));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 16px 48px rgba(19, 6, 20, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.24);
   backdrop-filter: blur(24px);
 }
 
@@ -58,16 +59,16 @@ a {
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.42), rgba(255, 111, 212, 0.24), rgba(83, 204, 255, 0.24));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.48), rgba(255, 103, 198, 0.3), rgba(213, 186, 255, 0.26), rgba(157, 210, 255, 0.18));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  opacity: 0.9;
+  opacity: 0.94;
   pointer-events: none;
 }
 
 .text-premium {
-  background: linear-gradient(135deg, #ffffff 0%, #ffd9f7 32%, #b8c7ff 68%, #e7f9ff 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffe7f6 28%, #ff9edc 58%, #ead9ff 78%, #f8fdff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -75,11 +76,11 @@ a {
 
 .aurora-layer {
   background:
-    radial-gradient(circle at 15% 20%, rgba(247, 91, 217, 0.26), transparent 22%),
-    radial-gradient(circle at 85% 30%, rgba(116, 103, 255, 0.22), transparent 20%),
-    radial-gradient(circle at 55% 78%, rgba(74, 208, 255, 0.2), transparent 24%),
-    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.08), transparent 18%);
-  filter: saturate(125%);
+    radial-gradient(circle at 15% 20%, rgba(255, 100, 201, 0.32), transparent 22%),
+    radial-gradient(circle at 85% 30%, rgba(214, 184, 255, 0.24), transparent 20%),
+    radial-gradient(circle at 55% 78%, rgba(157, 210, 255, 0.16), transparent 24%),
+    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.1), transparent 18%);
+  filter: saturate(128%);
   animation: auroraShift 14s ease-in-out infinite alternate;
 }
 

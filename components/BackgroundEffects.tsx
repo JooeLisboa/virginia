@@ -5,9 +5,9 @@ import { motion, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const glows = [
-  "from-fuchsia-500/30 via-pink-400/10 to-transparent",
-  "from-violet-400/30 via-sky-400/10 to-transparent",
-  "from-cyan-400/25 via-blue-500/10 to-transparent",
+  "from-[#ff63cb]/32 via-[#ffb3ea]/12 to-transparent",
+  "from-[#d6b8ff]/30 via-[#f7c7ff]/10 to-transparent",
+  "from-[#9dd2ff]/22 via-[#ff88d8]/10 to-transparent",
 ];
 
 export function BackgroundEffects() {
@@ -18,9 +18,9 @@ export function BackgroundEffects() {
       aria-hidden
       className="pointer-events-none absolute inset-0 overflow-hidden rounded-4xl"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_34%),linear-gradient(160deg,rgba(10,12,26,0.92),rgba(17,10,33,0.95)_35%,rgba(7,13,32,0.92)_100%)]" />
-      <div className="absolute inset-0 aurora-layer opacity-90" />
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22 viewBox=%220%200%20400%20400%22%3E%3Cfilter id=%22n%22 x=%220%22 y=%220%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.75%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22400%22 height=%22400%22 filter=%22url(%23n)%22 opacity=%220.08%22/%3E%3C/svg%3E')] mix-blend-soft-light opacity-35" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.22),transparent_34%),linear-gradient(160deg,rgba(34,11,40,0.94),rgba(56,18,59,0.95)_38%,rgba(26,11,36,0.94)_100%)]" />
+      <div className="absolute inset-0 aurora-layer opacity-95" />
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22 viewBox=%220%200%20400%20400%22%3E%3Cfilter id=%22n%22 x=%220%22 y=%220%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.72%22 numOctaves=%222%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22400%22 height=%22400%22 filter=%22url(%23n)%22 opacity=%220.08%22/%3E%3C/svg%3E')] mix-blend-soft-light opacity-35" />
 
       {glows.map((glow, index) => (
         <motion.div
@@ -51,7 +51,7 @@ export function BackgroundEffects() {
       ))}
 
       <motion.div
-        className="absolute inset-x-8 top-16 h-28 rounded-full bg-white/10 blur-3xl"
+        className="absolute inset-x-8 top-16 h-28 rounded-full bg-white/12 blur-3xl"
         animate={
           reduceMotion
             ? undefined
@@ -64,7 +64,7 @@ export function BackgroundEffects() {
         {Array.from({ length: 12 }).map((_, index) => (
           <motion.span
             key={index}
-            className="absolute block h-1.5 w-1.5 rounded-full bg-white/45 shadow-[0_0_16px_rgba(255,255,255,0.5)]"
+            className="absolute block h-1.5 w-1.5 rounded-full bg-white/50 shadow-[0_0_18px_rgba(255,255,255,0.56)]"
             style={{
               left: `${10 + ((index * 7) % 80)}%`,
               top: `${8 + ((index * 11) % 80)}%`,

@@ -15,8 +15,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Virginia — Premium Interactive Card',
-  description: 'Cartão interativo premium, futurista e mobile-first para Virginia.'
+  title: 'Virginia — Cartão Interativo Pop Premium',
+  description: 'Cartão interativo mobile-first com universo pop premium, beauty e lifestyle para Virginia.'
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
