@@ -57,30 +57,31 @@ export function PremiumLinkItem({
         )}
       >
         <div
-          className={cn("absolute inset-0 bg-linear-to-r opacity-70", accent)}
+          className={cn("absolute inset-0 bg-linear-to-r opacity-80", accent)}
         />
-        <div className="absolute inset-px rounded-[1.45rem] bg-[linear-gradient(180deg,rgba(11,14,31,0.74),rgba(12,14,32,0.86))]" />
+        <div className="absolute inset-px rounded-[1.45rem] bg-[linear-gradient(180deg,rgba(41,17,47,0.64),rgba(31,12,35,0.88))]" />
+        <div className="absolute inset-x-8 top-0 h-10 rounded-full bg-white/10 blur-2xl" />
         <motion.div
-          className="absolute -left-1/3 top-0 h-full w-1/2 rotate-12 bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.22),transparent)] opacity-0 group-hover:opacity-100"
+          className="absolute -left-1/3 top-0 h-full w-1/2 rotate-12 bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.24),transparent)] opacity-0 group-hover:opacity-100"
           animate={reduceMotion ? undefined : { x: ["-10%", "180%"] }}
-          transition={{ duration: 2.6, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
         />
 
         <div className="relative z-10 flex items-start gap-3.5">
-          <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/18 bg-white/10 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.22)] backdrop-blur-xl">
+          <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/20 bg-white/12 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_0_24px_rgba(255,132,208,0.12)] backdrop-blur-xl">
             <Icon className="h-[1.1rem] w-[1.1rem]" />
           </div>
           <div className="min-w-0 flex-1">
             <div className="mb-2 flex items-center justify-between gap-3">
-              <span className="rounded-full border border-white/12 bg-white/8 px-2.5 py-1 text-[0.62rem] font-medium uppercase tracking-[0.28em] text-white/58">
+              <span className="rounded-full border border-white/14 bg-white/10 px-2.5 py-1 text-[0.62rem] font-medium uppercase tracking-[0.24em] text-white/70">
                 {tag}
               </span>
-              <ArrowUpRight className="h-4 w-4 text-white/62 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight className="h-4 w-4 text-white/68 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </div>
             <h2 className="text-base font-semibold tracking-[-0.03em] text-white">
               {title}
             </h2>
-            <p className="mt-1 text-sm leading-relaxed text-white/66">
+            <p className="mt-1 text-sm leading-relaxed text-white/72">
               {description}
             </p>
           </div>
